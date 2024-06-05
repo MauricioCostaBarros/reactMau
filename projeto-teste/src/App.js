@@ -1,5 +1,9 @@
 import Cabecalho from './componentes/Cabecalho/Cabecalho';
-import './App.css';
+import styled from 'styled-components';
+
+const AppContainer = `
+
+`
 
 function App() {
   return (

@@ -17,9 +17,12 @@ const MenuContainer = styled.ul`
 function Menu() {
     return (
         <MenuContainer>
-            <li>{textoOpcoes[0]}</li>
-            <li>{textoOpcoes[1]}</li>
-            <li>{textoOpcoes[2]}</li>
+            {
+                textoOpcoes.map( (opcao) => (
+                    <li>{opcao}</li>
+                ))
+            }
+
         </MenuContainer>
     );
 }

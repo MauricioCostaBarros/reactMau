@@ -3,24 +3,30 @@ import imgLogin from "../../imagens/imglogin.png";
 import imgPesquisa from "../../imagens/imgpesquisa.png";
 import styled from "styled-components";
 
-const LogoContainer = styled.div`
+const icones = [imgLogin, imgPesquisa];
+
+const IconesContainer = styled.div`
     width: 20%;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    #imgLogin, #imgPesquisa{
-        height: 90%;
+    #imgs{
+        height: 100%;
         margin: 10px;
+        border: 2px solid black;
     }
 `
 
 function Icones() {
     return (
-        <LogoContainer>
-            <img id="imgLogin" src={imgLogin} alt="" />
-            <img id="imgPesquisa" src={imgPesquisa} alt="" />
-        </LogoContainer>
+        <IconesContainer> 
+            {
+                icones.map( (icones) => (
+                    <img id="imgs" src={icones} alt=""/> 
+                ))
+            }
+        </IconesContainer>
     );
 }
 export default Icones;

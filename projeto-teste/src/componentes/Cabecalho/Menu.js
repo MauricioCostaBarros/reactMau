@@ -22,7 +22,6 @@ function Menu() {
                     <li>{opcao}</li>
                 ))
             }
-
         </MenuContainer>
     );
 }

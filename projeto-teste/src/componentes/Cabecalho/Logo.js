@@ -13,7 +13,9 @@ const LogoContainer = styled.div`
     
         width: 90%;
     }
-   
+    #textoLogo{
+        margin: 0;
+    }
 `
 
 function Logo() {

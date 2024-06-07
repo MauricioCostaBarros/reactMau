@@ -8,7 +8,7 @@ const CabecalhoContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
+    height: 15vh;
     background-color: gray;
     border-top: solid black 4px;
     border-bottom: solid black 4px;
